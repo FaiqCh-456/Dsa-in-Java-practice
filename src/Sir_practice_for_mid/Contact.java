@@ -1,4 +1,4 @@
-package Sir_practice;
+package Sir_practice_for_mid;
 
 class Contact {
     String name;
