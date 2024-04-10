@@ -104,19 +104,15 @@ class Main {
     public static void main(String[] args) {
         PhoneBook phoneBook = new PhoneBook();
 
-        // Adding contacts
         phoneBook.addContact("John Doe", "1234567890");
         phoneBook.addContact("Jane Smith", "0987654321");
 
-        // Displaying contacts
         phoneBook.displayContacts();
 
-        // Searching for a contact
         System.out.println("\nSearching for a contact:");
         phoneBook.searchContact("John Doe");
         phoneBook.searchContact("Alice");
 
-        // Deleting a contact
         System.out.println("\nDeleting a contact:");
         phoneBook.deleteContact("Jane Smith");
         phoneBook.displayContacts();

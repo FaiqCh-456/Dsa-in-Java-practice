@@ -69,7 +69,7 @@ class TrafficSignalSimulation {
             } while (temp != head);
         }
 
-        // Method to simulate traffic signals for a given number of cycles
+
         void simulateTrafficSignals(int cycles) {
             if (head == null) {
                 System.out.println("No traffic signals to simulate");

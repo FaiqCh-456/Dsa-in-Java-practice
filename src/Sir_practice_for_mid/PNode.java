@@ -91,7 +91,7 @@ class CircularSinglyLinkedList {
                 current.executionTime -= quantum;
             }
             current = current.next;
-        } while (current != head); // Update the loop condition
+        } while (current != head);
     }
 
 

@@ -89,7 +89,6 @@ class Playlist {
     }
 
     public void shufflePlaylist() {
-        // Convert linked list to array for shuffling
         int size = getSize();
         Song[] songs = new Song[size];
         Node2 current = head;
@@ -98,7 +97,6 @@ class Playlist {
             current = current.next;
         }
 
-        // Shuffle the array
         for (int i = size - 1; i > 0; i--) {
             int j = (int) (Math.random() * (i + 1));
             Song temp = songs[i];
@@ -106,7 +104,6 @@ class Playlist {
             songs[j] = temp;
         }
 
-        // Reconstruct the playlist from the shuffled array
         head = null;
         tail = null;
         for (Song song : songs) {
@@ -129,19 +126,15 @@ class Playlist {
     public static void main(String[] args) {
         Playlist playlist = new Playlist();
 
-        // Adding songs to the playlist
         playlist.addSong("Lonely", "Akon");
         playlist.addSong("Tasweer bna k", "Sajjad Ali");
         playlist.addSong("Nahin Milta", "Bayyan");
 
-        // Displaying the playlist
         playlist.displayPlaylist();
 
-        // Removing a song from the playlist
         playlist.removeSong("Lonely", "Akon");
         playlist.displayPlaylist();
 
-        // Shuffling the playlist
         playlist.shufflePlaylist();
         playlist.displayPlaylist();
     }
