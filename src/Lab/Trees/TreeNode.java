@@ -55,6 +55,8 @@ class BinaryTree {
         tree.root.left.right = new TreeNode("N5");
         tree.root.right.left = new TreeNode("N6");
         tree.root.right.right = new TreeNode("N7");
+        tree.root.left.left.left = new TreeNode("N8");
+        tree.root.left.left.right = new TreeNode("N9");
 
 
 
