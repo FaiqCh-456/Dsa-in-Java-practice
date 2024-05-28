@@ -1,4 +1,4 @@
-# Data Structures and Algorithms in Java
+# Data Structures in Java
 
 This repository contains implementations of various Data Structures and Algorithms in Java. Each implementation is provided with comprehensive comments to aid understanding.
 
@@ -14,14 +14,9 @@ This repository contains implementations of various Data Structures and Algorith
 - [Stack]: Implementation of a stack using arrays.
 - [Queue]: Implementation of a queue using arrays.
 - [BinarySearchTree]: Implementation of a binary search tree.
-- [HashMap]: Implementation of a hash map using chaining for collision resolution.
 - [Heaps] : Implementation of Binary Heap tree
 - [AVL] : Implementation of AVL Trees 
 
-## Algorithms
-
-- [Sorting](src/main/java/algorithms/Sorting.java): Implementation of various sorting algorithms like Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, and Quick Sort.
-- [Search](src/main/java/algorithms/Search.java): Implementation of linear search and binary search algorithms.
 
 ## How to Use
 
