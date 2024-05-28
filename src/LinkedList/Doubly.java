@@ -1,4 +1,4 @@
-package Lab;
+package LinkedList;
 
 
 class Doubly {

@@ -21,7 +21,7 @@ class BST {
         size = 0;
     }
 
-    // Method to insert a key into the BST
+
     public void insert(int key) {
         root = insertRec(root, key, 0);
     }
@@ -38,14 +38,14 @@ class BST {
         } else if (key > node.key) {
             node.right = insertRec(node.right, key, level + 1);
         } else {
-            return node;  // Duplicate keys not allowed
+            return node;
         }
 
         node.height = 1 + Math.max(getHeight(node.left), getHeight(node.right));
         return node;
     }
 
-    // Method to delete a key from the BST
+
     public void delete(int key) {
         root = deleteRec(root, key, 0);
     }
@@ -86,7 +86,7 @@ class BST {
         return minv;
     }
 
-    // Method to search for a key in the BST
+
     public boolean search(int key) {
         return searchRec(root, key, 0);
     }
@@ -105,7 +105,7 @@ class BST {
         return key < node.key ? searchRec(node.left, key, level + 1) : searchRec(node.right, key, level + 1);
     }
 
-    // Method to get the current height of the BST
+
     public int getHeight() {
         return getHeight(root);
     }
@@ -116,55 +116,52 @@ class BST {
         }
         return node.height;
     }
-
-    // Method to get the total number of nodes in the BST
     public int getSize() {
         return size;
     }
 
-    // Main method for testing
+
     public static void main(String[] args) {
-        // Test suite for the BST
+
         runTests();
     }
 
     private static void runTests() {
         BST bst = new BST();
 
-        // Test insertion and size/height tracking
+
         int[] elements = {15, 10, 20, 8, 12, 16, 25};
         for (int el : elements) {
             bst.insert(el);
         }
 
 
-        System.out.println("Size: " + bst.getSize() + " (Expected: 7)");
-        System.out.println("Height: " + bst.getHeight() + " (Expected: 3)");
+        System.out.println("Size: " + bst.getSize() + " ");
+        System.out.println("Height: " + bst.getHeight() + "");
 
-        // Verify the search function
         bst.search(10);
         bst.search(100);
 
-        // Test deletion
+
         bst.delete(20);
-        System.out.println("\nTest Delete 20:");
-        System.out.println("Size: " + bst.getSize() + " (Expected: 6)");
-        System.out.println("Height: " + bst.getHeight() + " (Expected: 3)");
+        System.out.println("\n Delete 20:");
+        System.out.println("Size: " + bst.getSize() + " ");
+        System.out.println("Height: " + bst.getHeight() + "");
         bst.search(20);
 
         bst.delete(15);
-        System.out.println("\nTest Delete 15:");
-        System.out.println("Size: " + bst.getSize() + " (Expected: 5)");
-        System.out.println("Height: " + bst.getHeight() + " (Expected: 3)");
+        System.out.println("\n Delete 15:");
+        System.out.println("Size: " + bst.getSize() + " ");
+        System.out.println("Height: " + bst.getHeight() + " ");
         bst.search(15);
 
         bst.delete(8);
-        System.out.println("\nTest Delete 8:");
-        System.out.println("Size: " + bst.getSize() + " (Expected: 4)");
-        System.out.println("Height: " + bst.getHeight() + " (Expected: 3)");
+        System.out.println("\n Delete 8:");
+        System.out.println("Size: " + bst.getSize() + " ");
+        System.out.println("Height: " + bst.getHeight() + " ");
         bst.search(8);
 
-        System.out.println("\nAll tests completed.");
+
     }
 }
 

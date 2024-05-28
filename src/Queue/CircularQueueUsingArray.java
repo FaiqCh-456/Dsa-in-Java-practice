@@ -1,4 +1,4 @@
-package Lab;
+package Queue;
 
 import java.util.Stack;
 

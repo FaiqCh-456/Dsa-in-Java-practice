@@ -1,4 +1,4 @@
-package Lab;
+package Queue;
 
 public class Queue {
     int maxsize;

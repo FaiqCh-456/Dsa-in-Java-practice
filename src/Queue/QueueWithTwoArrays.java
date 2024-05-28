@@ -1,4 +1,4 @@
-package Lab;
+package Queue;
 
 public class QueueWithTwoArrays {
      int size = 100;
